@@ -2,21 +2,13 @@
 
 > Sample Nuxt + Vuetify + Typescript app
 
-## Build Setup
+## How to use
 
-``` bash
-# install dependencies
-$ yarn install
+Nuxt Typescript Docs: https://typescript.nuxtjs.org/
+Vuex Module Decorator Docs: https://github.com/championswimmer/vuex-module-decorators
+Vuetify Docs: https://vuetifyjs.com/
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+## Sitenotes
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+- Breakpoints are set to the default chrome devtools breakpoints for easy switching when developing (See nuxt.config.ts)
+- Be sure to edit your API endpoint on settings.js
