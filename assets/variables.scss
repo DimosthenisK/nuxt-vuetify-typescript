@@ -1,0 +1,40 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+@import '~vuetify/src/styles/tools/_functions.sass';
+@import '~vuetify/src/styles/styles.sass';
+
+$grid-breakpoints: map-deep-merge(
+    $grid-breakpoints,
+    (
+        'xs': 0,
+        'sm': 425px,
+        'md': 768px,
+        'lg': 1024px,
+        'xl': 1920px
+    )
+);
+
+/* prettier-ignore */
+$display-breakpoints: map-deep-merge(
+    $display-breakpoints,
+    (
+        'print-only': 'only print',
+        'screen-only': 'only screen',
+        'xs-only': 'only screen and (max-width: #{map-get($grid-breakpoints, 'sm') - 1})',
+        'sm-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'sm')}) and (max-width: #{map-get($grid-breakpoints, 'md') - 1})',
+        'sm-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, 'md') - 1})',
+        'sm-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, 'sm')})',
+        'md-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'md')}) and (max-width: #{map-get($grid-breakpoints, 'lg') - 1})',
+        'md-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, 'lg') - 1})',
+        'md-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, 'md')})',
+        'lg-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'lg')}) and (max-width: #{map-get($grid-breakpoints, 'xl') - 1})',
+        'lg-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, 'xl') - 1})',
+        'lg-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, 'lg')})',
+        'xl-only': 'only screen and (min-width: #{map-get($grid-breakpoints, 'xl')})'
+    )
+);
+
+@import '~vuetify/src/styles/settings/_variables';
