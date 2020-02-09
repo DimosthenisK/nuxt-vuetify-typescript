@@ -72,8 +72,8 @@ const config: Configuration = {
             thresholds: {
                 xs: 0,
                 sm: 425,
-                md: 768 + 16,
-                lg: 1024 + 16
+                md: 768 + 16, //16px for the scrollbar
+                lg: 1024 + 16 //16px for the scrollbar
             }
         },
         theme: {
