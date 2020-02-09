@@ -10,5 +10,7 @@ export default class sample extends VuexModule {
     @Mutation sampleMutation() {}
 
     @Action({ commit: 'sampleMutation' })
-    async sampleAction() {}
+    async sampleAction() {
+        // $axios.$get(...)
+    }
 }
